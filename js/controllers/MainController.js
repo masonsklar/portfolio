@@ -18,7 +18,7 @@ project.controller('MainController', ['$scope', function($scope) {
 	{
 	title: 'About',
 	type: 'about',
-	caption: "I'm Mason Sklar, an artist and designer in Minneapolis, Minnesota. I love print and I also love to explore the frontiers of interactive media. I'm a creative problem solver and believe in the power of collaboration. <br/>I like to do things by hand. I like to learn how things work. I like to help people make things. When we work together, we can make cool stuff and real change! <a href='http://files.masonsklar.com/masonsklar_resume.pdf'>Here is my résumé</a> and you can email me and <a href='mailto:me@masonsklar.com'>here</a>.",
+	caption: 'I\'m Mason Sklar, an artist and designer in Minneapolis, Minnesota. I love print and I also love to explore the frontiers of interactive media. I\'m a creative problem solver and believe in the power of collaboration. <br/>I like to do things by hand. I like to learn how things work. I like to help people make things. When we work together, we can make cool stuff and real change! <a href="http://files.masonsklar.com/masonsklar_resume.pdf" target="_blank">Here is my résumé</a> and you can email me and <a href="mailto:me@masonsklar.com">here</a>.',
 	data: '<img src="img/me.gif" />'
     },
     {
@@ -54,14 +54,14 @@ project.controller('MainController', ['$scope', function($scope) {
     {
 	title: 'The House Call',
 	type: 'physical',
-	caption: 'The story of a boy who comes down with a magical illness and the wizard sent to help diagnose and cure him, 24 pages, 2 colors. Produced as a digital comic <a href="http://s3.amazonaws.com/files.masonsklar.com/TheHouseCall_masonsklar.pdf">here</a> and Risographed on my RA5900 <a href="http://gum.co/housecall">here</a>.',
-	data: '<img src="img/ecover.png"/>'
+	caption: 'The story of a boy who comes down with a magical illness and the wizard sent to help diagnose and cure him, 24 pages, 2 colors. Produced as a digital comic <a href="http://s3.amazonaws.com/files.masonsklar.com/TheHouseCall_masonsklar.pdf" target="_blank">here</a> and Risographed on my RA5900 <a href="http://gum.co/housecall" target="_blank">here</a>.',
+	data: '<a href="http://s3.amazonaws.com/files.masonsklar.com/TheHouseCall_masonsklar.pdf" target="_blank"><img src="img/ecover.png"/></a>'
     },
     {
     title: 'Citizens\' Guide to Useful Arts',
 	type: 'physical',
-	caption: 'An "in-universe" pamphlet about the numerous ways the magical arts can benefit the life of an average citizen. 8 pages, 2 colors. Produced as a PDF <a href="http://s3.amazonaws.com/files.masonsklar.com/CitizensGuidetoUsefulArts_MasonSklar.pdf">here</a> and Risographed on my RA5900 <a href="http://gum.co/cguide">here</a>.',
-	data: '<img src="img/cguidetotal.png"/>'
+	caption: 'An "in-universe" pamphlet about the numerous ways the magical arts can benefit the life of an average citizen. 8 pages, 2 colors. Produced as a PDF <a href="http://s3.amazonaws.com/files.masonsklar.com/CitizensGuidetoUsefulArts_MasonSklar.pdf" target="_blank">here</a> and Risographed on my RA5900 <a href="http://gum.co/cguide" target="_blank">here</a>.',
+	data: '<a href="http://s3.amazonaws.com/files.masonsklar.com/CitizensGuidetoUsefulArts_MasonSklar.pdf" target="_blank"><img src="img/cguidetotal.png"/></a>'
     },
     {
 	title: 'Fort',
