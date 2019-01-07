@@ -1,0 +1,94 @@
+    <div id="container">
+        <div id="mainscreen"></div>
+
+        <div id="screen2"></div>
+
+        <div id="panel">
+            <div id="griddus" class="box">
+                <!-- This control is a grid of on/off switched and a toggle that turns them all on or off.  -->
+
+                <div id="alltoggle" style="float:left"></div>
+
+                <div id="buttons">
+                    <div class="button disabled"></div>
+
+                    <div class="button disabled"></div>
+
+                    <div class="button on disabled"></div>
+
+                    <div class="button disabled"></div>
+
+                    <div class="button on disabled"></div>
+
+                    <div class="button disabled"></div>
+
+                    <div class="button disabled"></div>
+
+                    <div class="button disabled"></div>
+
+                    <div class="button on disabled"></div>
+                </div>
+
+                <div id="marqueebox">
+                    <div id="marquee">
+                        <p id="status">Target acquired.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quad" class="box">
+                <!-- This control is a white stone in a tray divided into 4ths. The quadrant that holds the stone determines the value of the modifier. -->
+
+                <div id="q1" class="quadrant">
+                    <div id="stone" class="hidden"></div>
+                </div>
+
+                <div id="q2" class="quadrant"></div>
+
+                <div id="q3" class="quadrant"></div>
+
+                <div id="q4" class="quadrant"></div>
+            </div>
+
+            <div id="sliderbox" class="box">
+                <div class="slidedivide">
+                    <div class="slider squirrel" id="squirrelslider1"></div>
+                </div>
+
+                <div class="slidedivide">
+                    <div class="slider squirrel" id="squirrelslider2"></div>
+                </div>
+            </div>
+
+            <div id="togglebox" class="box">
+                <!-- This control is 3 toggles that break when they're clicked an equal or greater number of times to the stone box modifier. -->
+
+                <div class="slidedividebreak">
+                    <div class="sliderbreak break" id="breakerr"></div>
+                </div>
+            </div>
+
+            <div id="infobox" class="box">
+                <div id="reset" onclick="location.reload()">
+                    RESET
+                </div>
+
+                <div id="arrow" class="hidden">
+                    ?
+                </div>
+
+                <h1>Welcome to your new job!</h1>
+
+                <ul>
+                    <li>Guide the <span style="color:#0f0" onclick="flash('head1');flash('mouth1');">Target</span> through an interpersonal interaction.</li>
+
+                    <li>Guide a <span style="color:#0f0" onclick="flash('triangle');flash('circle');">thoughtform</span> into the <span style="color:#0f0" onclick="flash('head1');flash('mouth1');">Target</span>'s psycho-emotional workspace.</li>
+
+                    <li>Select the <span style="color:#0f0" onclick="flash('brow'+breaker.brow.toUpperCase());">intention filter</span> for the desired interpersonal interaction.</li>
+                </ul>
+                <p>
+            </div>
+        </div>
+    </div><script type="text/javascript" src="controller2.js">
+</script>
+

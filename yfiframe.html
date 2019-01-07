@@ -1,0 +1,285 @@
+<html>
+<head>
+<title>YOUR FRIENDS</title>
+<style type="text/css">
+
+body {
+    background-color: white;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease
+    }
+
+canvas {
+    background-color: white
+    }
+
+#svglogo {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+    }
+
+#tring {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+    }
+
+#tall {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+    }
+
+#square {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+    }
+
+#bar {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+    }
+
+#fat {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+    }
+
+svg {
+    background-color: white;
+    transform: scale(1.25);
+    transform-origin: top left;
+    }
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+<script text="text/javascript">
+
+var pxx=10;
+
+var tring={
+	'x':0*pxx,
+	'y':0*pxx,
+	'width':9*pxx,
+	'height':16*pxx,
+	'orientation':'up'
+};
+
+var tall={
+	'x':0*pxx,
+	'y':16*pxx,
+	'width':9*pxx,
+	'height':14*pxx,
+}
+
+var square={
+	'x':15*pxx,
+	'y':18*pxx,
+	'dimension':12*pxx,
+}
+
+var bar={
+	'x':26*pxx,
+	'y':12*pxx,
+	'width':pxx,
+	'height':6*pxx,
+}
+
+var fat={
+	'x':15*pxx,
+	'y':6*pxx,
+	'width':12*pxx,
+	'height':6*pxx,
+}
+
+var yf=function(){
+	$("#bar").css({"-webkit-transform":"translate(26px,12px)","fill":"rgba(100,255,100,1)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(0,173,239,1)"});
+	$("#tring").css({"-webkit-transform":"translate(0)","fill":"rgba(255,241,0,1)"});
+	$("#fat").css({"-webkit-transform":"translate(15px,6px)","fill":"rgba(0,173,239,1)"});
+	$("#tall").css({"-webkit-transform":"translate(0px,16px)","fill":"rgba(236,0,139,1)"});
+
+};
+
+var yf2=function(){
+	$("#bar").css({"-webkit-transform":"translate(26px,12px)","fill":"rgba(100,255,100,1)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(249,206,255,1)"});
+	$("#tring").css({"-webkit-transform":"translate(0)","fill":"rgba(255,241,0,1)"});
+	$("#fat").css({"-webkit-transform":"translate(15px,6px)","fill":"rgba(236,100,139,1)"});
+	$("#tall").css({"-webkit-transform":"translate(0px,16px)","fill":"rgba(39,169,255,1)"});
+
+};
+
+var yf3=function(){
+	$("#bar").css({"-webkit-transform":"translate(26px,12px)","fill":"rgba(242,201,47,.75)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(242,201,47,1)"});
+	$("#tring").css({"-webkit-transform":"translate(0)","fill":"rgba(190,30,45,1)"});
+	$("#fat").css({"-webkit-transform":"translate(15px,6px)","fill":"rgba(242,201,47,1)"});
+	$("#tall").css({"-webkit-transform":"translate(0px,16px)","fill":"rgba(39,169,255,1)"});
+
+};
+
+var yf4=function(){
+	$("#bar").css({"-webkit-transform":"translate(26px,12px)","fill":"rgba(0,165,80,1)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(249,206,255,1)"});
+	$("#tring").css({"-webkit-transform":"translate(0)","fill":"rgba(0,165,80,1)"});
+	$("#fat").css({"-webkit-transform":"translate(15px,6px)","fill":"rgba(249,206,255,1)"});
+	$("#tall").css({"-webkit-transform":"translate(0px,16px)","fill":"rgba(249,206,255,1)"});
+
+};
+
+var yf5=function(){
+	$("#bar").css({"-webkit-transform":"translate(26px,12px)","fill":"rgba(0,165,80,1)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(0,173,239,1)"});
+	$("#tring").css({"-webkit-transform":"translate(0)","fill":"rgba(0,165,80,1)"});
+	$("#fat").css({"-webkit-transform":"translate(15px,6px)","fill":"rgba(0,165,80,1)"});
+	$("#tall").css({"-webkit-transform":"translate(0px,16px)","fill":"rgba(0,173,239,1)"});
+
+};
+
+var yf6=function(){
+	$("#bar").css({"-webkit-transform":"translate(26px,12px)","fill":"rgba(249,206,255,1)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(236,0,139,0.85)"});
+	$("#tring").css({"-webkit-transform":"translate(0)","fill":"rgba(249,206,255,1)"});
+	$("#fat").css({"-webkit-transform":"translate(15px,6px)","fill":"rgba(236,0,139,0.85)"});
+	$("#tall").css({"-webkit-transform":"translate(0px,16px)","fill":"rgba(249,206,255,1)"});
+
+};
+
+var doggy=function(){
+	$("#bar").css({"-webkit-transform":"translate(0px,12px)","fill":"rgba(190,30,45,1)"});
+	$("#square").css({"-webkit-transform":"translate(0px,18px)","fill":"rgba(255,241,0,1)"});
+	$("#tring").css({"-webkit-transform":"translate(12px,6px)","fill":"rgba(190,30,45,1)","z-index":"0"});
+	$("#fat").css({"-webkit-transform":"translate(12px,10px)","fill":"rgba(50,50,50,0.7)"});
+	$("#tall").css({"-webkit-transform":"translate(12px,16px)","fill":"rgba(255,241,0,1)"});
+
+};
+
+var fort=function(){
+	$("#bar").css({"-webkit-transform":"translate(21px,10px)","fill":"rgba(190,30,45,1)"});
+	$("#square").css({"-webkit-transform":"translate(15px,18px)","fill":"rgba(39,169,255,1)"});
+	$("#tring").css({"-webkit-transform":"translate(4px,-17px) rotate(-90deg)","fill":"rgba(255,241,0,0.85)"});
+	$("#fat").css({"-webkit-transform":"translate(10px,4px)","fill":"rgba(255,215,0,0.85)"});
+	$("#tall").css({"-webkit-transform":"translate(16.5px,16px)","fill":"rgba(39,169,255,.75)"});
+}
+
+var bird=function(){
+	$("#bar").css({"-webkit-transform":"translate(2px,16px)","fill":"rgba(100,255,100,1)"});
+	$("#square").css({"-webkit-transform":"translate(16.5px,4px)","fill":"rgba(39,169,255,1)"});
+	$("#tring").css({"-webkit-transform":"translate(0.5px,-14px) rotate(-90deg)","fill":"rgba(255,241,0,0.85)"});
+	$("#fat").css({"-webkit-transform":"translate(10px,24px)","fill":"rgba(236,100,139,1)"});
+	$("#tall").css({"-webkit-transform":"translate(18px,16px)","fill":"rgba(39,169,255,1)"});
+}
+
+var moai=function(){
+	$("#bar").css({"-webkit-transform":"translate(11px,-29px) rotate(-90deg)","fill":"rgba(236,100,139,1)"});
+	$("#square").css({"-webkit-transform":"translate(8px,18px)","fill":"rgba(236,100,139,1)"});
+	$("#tring").css({"-webkit-transform":"translate(15px,2px)","fill":"rgba(236,100,139,.9)"});
+	$("#fat").css({"-webkit-transform":"translate(8px,1px)","fill":"rgba(236,100,139,.8)"});
+	$("#tall").css({"-webkit-transform":"translate(7px,7px)","fill":"rgba(236,100,139,.9)"});
+}
+
+var drippy=function(){
+	$("#bar").css({"-webkit-transform":"translate(20px,18px)","fill":"rgba(100,255,100,.85)"});
+	$("#square").css({"-webkit-transform":"translate(5px,0px)","fill":"rgba(255,241,0,0.85)"});
+	$("#tring").css({"-webkit-transform":"translate(17px,2px)","fill":"rgba(236,0,139,0.85)"});
+	$("#fat").css({"-webkit-transform":"translate(6px,24px)","fill":"rgba(0,173,239,1)"});
+	$("#tall").css({"-webkit-transform":"translate(8px,12px)","fill":"rgba(255,241,0,0.85)"});
+}
+
+var scary=function(){
+	$("#bar").css({"-webkit-transform":"translate(13px,-23px) rotate(-90deg)","fill":"rgba(236,0,139,1)","z-index":"2"});
+	$("#square").css({"-webkit-transform":"translate(9px,4px)","fill":"rgba(50,50,50,1)","z-index":"0"});
+	$("#tring").css({"-webkit-transform":"translate(20px,14px)","fill":"rgba(50,50,50,1)","z-index":"0"});
+	$("#fat").css({"-webkit-transform":"translate(0px,4px)","fill":"rgba(50,50,50,1)","z-index":"0"});
+	$("#tall").css({"-webkit-transform":"translate(11px,16px)","fill":"rgba(50,50,50,1)","z-index":"0"});
+}
+
+var configs=[doggy,yf2,fort,yf3,moai,yf4,bird,yf5,drippy,yf6,scary,yf];
+current=0;
+setOk=true;
+
+
+$(document).ready(function(){
+	setInterval(function(){
+		if(current<11){
+			
+			configs[current]();
+			current++;
+			
+	}else{
+		
+		configs[current]();
+		current=0;
+	
+	}
+	
+	},3000);
+	
+	});
+
+$(document).ready(function(){
+	
+});
+
+</script>
+
+</head>
+<body onload="yf()">
+	
+	
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 30 30">
+        <g id="svglogo">
+            <rect id="tall" width="9" height="14" fill="#ff7070" x="0" y="0" />
+            <rect id="square" width="12" height="12" fill="#7799ff" x="0" y="0" />
+            <rect id="fat" width="12" height="6" fill="#aa66aa" x="0" y="0" />
+            <polygon id="tring" points="0,0 0,16 9,16" fill="yellow" />
+            <rect id="bar" width="1" height="6" fill="#aaffaa" x="0" y="0" />
+            
+        </g>
+    </svg>
+    
+</body>
+</html>

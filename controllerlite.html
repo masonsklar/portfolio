@@ -1,0 +1,219 @@
+
+    <div id="container">
+        <div id="view">
+
+        </div>
+
+        <div id="panel" onLoad="draggus()">
+
+			<div id="griddus" class="box">
+                <!-- This control is a grid of on/off switched and a toggle that turns them all on or off.  -->
+                <div id="alltoggle"style="float:left">
+                    
+                </div>
+                
+                <div id="buttons">
+	                <div class="button"></div>
+	                <div class="button"></div>
+	                <div class="button on"></div>
+	                
+	                <div class="button"></div>
+	                <div class="button"></div>
+	                <div class="button"></div>
+	                
+	                <div class="button"></div>
+	                <div class="button"></div>
+	                <div class="button on"></div>
+                </div>
+            </div>
+			
+			<div id="quad" class="box">
+                <!-- This control is a white stone in a tray divided into 4ths. The quadrant that holds the stone determines the value of the modifier. -->
+               
+                <div id="q1" class="quadrant">
+                    <div id="stone"></div>
+                </div>
+                <div id="q2" class="quadrant"></div>
+                <div id="q3" class="quadrant"></div>
+                <div id="q4" class="quadrant"></div>
+            </div>
+			
+            <div id="sliderbox" class="box">
+                <!-- This control is 3 sliders that make a single number. If that output is evenly divisible by the stone box control, the result is final. -->
+                
+                <!--<input id="box1comp1" type="range" min="1" max="10" onchange="pushNumber(this.value, sliderComp1)"><br>
+                <input id="box1comp2" type="range" min="1" max="100" step="7" value="6" onchange="pushNumber(this.value, sliderComp2)"><br>-->
+                <div class="slidedivide">
+	                <div class="slider squirrel" id="squirrelslider1"></div>
+	            </div>
+                <div class="slidedivide">
+	                <div class="slider squirrel" id="squirrelslider2"></div>
+	            </div>
+            </div>
+
+            
+
+            <div id="togglebox" class="box">
+                <!-- This control is 3 toggles that break when they're clicked an equal or greater number of times to the stone box modifier. -->
+               
+                <div class="slidedivide">
+	                <div class="slider break" id="breakerr"></div>
+	            </div>
+            </div>
+<div id="glass"></div>
+            
+
+        </div>
+    </div>
+    <script>
+	    
+var idleData = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/idle.json'
+
+    };
+    var data1 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/1.json'
+
+    };
+    var data2 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/2.json'
+
+    };
+    var data3 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/3.json'
+
+    };
+    var data4 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/4.json'
+
+    };
+    var data5 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/5.json'
+
+    };
+    var data6 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/6.json'
+
+    };
+    var data7 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/7.json'
+
+    };
+    var data8 = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: false,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/8.json'
+
+    };
+    var regularIdle = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/regularidle.json'
+    };
+    var emptyIdle = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/emptyidle.json'
+    };
+    var nightIdle = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/nightidle.json'
+    };
+    var sproutIdle = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/sproutidle.json'
+    };
+    var niceIdle = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/niceidle.json'
+    };
+    var eatIdle = {
+        wrapper: document.getElementById('view'),
+        animType: 'svg',
+        name: 'idle',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'controller/anim/eatidle.json'
+    };
+    
+    
+    var anim = bodymovin.loadAnimation(idleData);
+   draggus();
+	
+</script>

@@ -1,0 +1,171 @@
+@keyframes drop {
+			0% {
+				opacity:1;
+				margin-top: -12px;
+				transform: rotate(0deg);
+			}
+	
+			100% {
+				opacity:0;
+				margin-top: 60px;
+				transform: rotate(40deg);
+			}
+		}
+		
+        
+        #container {
+            width: 300px;
+            height: 600px;
+            background-color: rgba(220, 220, 220, .8);
+        }
+        
+        #view {
+	        position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+        }
+        
+        
+        
+        #panel {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, .75);
+            outline: 1px solid black;
+        }
+        .box {
+            margin: 0px;
+            padding: 0px;
+            width: 50%;
+            height: 50%;
+            float: left;
+        }
+        
+        #griddus{
+	        background-image: url('controller/buttonsbg.svg');
+        }
+        #alltoggle{
+	        width: 25%;
+	        height: 50%;
+	        background-image: url('controller/switch.svg');
+	        background-size: 200% 100%;
+	        background-position-x: 100%;
+        }
+        #alltoggle.on{
+	        background-position-x: 0%;
+        }
+        .toggle{
+	        height: 25%;
+	        width: 100%;
+	        background-color: red;
+        }
+        #buttons{
+	        float: left;
+	        width: 75%;
+	        height: 75%;
+        }
+        .button{
+	        float: left;
+	        width: 37px;
+	        height: 37px;
+	        background-image: url('controller/button.svg');
+	        background-repeat: no-repeat;
+	        background-size: 200% 100%;
+	        background-position: right center;
+        }
+        .button.on{
+	        background-position: left center;
+        }
+        
+        #quad{
+	        background-image: url('controller/quadbg.svg');
+        }
+        
+        .quadrant {
+            float:left;
+            height: 50%;
+            width: 50%;
+            margin: 0px;
+        }
+        
+        #stone {
+            background-image: url('controller/stone.svg');
+            background-position-x: center;
+            background-size: 300% 100%;
+            height: 75%;
+            width: 75%;
+            top:10px;
+            left:10px;
+        }
+		#stone.held{
+			background-position-x: left;
+		}
+		#stone.broken{
+			background-position-x: right;
+		}
+        
+        
+        
+        #sliderbox{
+	        background-image: url('controller/sliderbg.svg');
+        }
+        
+        #sliderbox.off{
+	        opacity: 0.75;
+        }
+        
+        .slidedivide{
+	        height: 25%;
+	        width: 100%;
+        }
+        .slider{
+	        height: 50%;
+	        width: 66.66%;
+	        margin: 20% auto 0%;
+	        pointer-events: none;
+	        
+        }
+        .squirrel{
+	        background-image: url('controller/slidetrack.svg');
+	        background-position: center center;
+	        background-repeat: no-repeat; 
+        }
+        .break{
+	        background-repeat: no-repeat;
+        }
+        .break .ui-slider-handle{
+	        background-image: url('controller/slider2.svg');
+        }
+        .ui-slider{
+	        position: relative;
+        }
+        .ui-slider-handle{
+	        position: absolute;
+	        height: 42px;
+	        width: 22px;
+        	pointer-events: auto;
+        	background-image: url('controller/slider.svg');
+        	background-repeat: no-repeat;
+        	margin-top: -12px;
+        	margin-left: -11px;
+        }
+        .ui-slider-handle.off{
+	        transform: rotate(90deg);
+        }
+        .drop{
+	        animation: drop 1s ease;
+	        opacity: 0;
+        }
+        #breakerr{
+	        margin: 44% auto;
+        }
+        #togglebox{
+	        background-image: url('controller/breakbg.svg');
+        }
+        
+        #view svg{
+	        position: absolute;
+	        outline: 1px solid black;
+	        animation:none;
+		}
