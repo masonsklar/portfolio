@@ -197,7 +197,7 @@ object {
 	font-size: 2.75em;
 }
 /* !biggest */
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 1110px) {
 	#nav {
 		font-size:.85em;
 	}
@@ -212,7 +212,7 @@ object {
 	
 	#content {
 		padding-top:19px;
-		min-width:500px;
+		min-width:680px;
 		width:58%;
 	}
 	
@@ -233,7 +233,7 @@ object {
 }
 
 /* !smaller screens */
-@media screen and (max-width : 859px) {
+@media screen and (max-width : 1109px) {
 	a:link {
 		color:#d00000;
 		text-decoration:none;
@@ -266,6 +266,7 @@ object {
 	}
 	
 	#content {
+		max-width: 680px;
 		padding-top:22px;
 		width:75%;
 	}
@@ -278,7 +279,6 @@ object {
 	
 	#animbox {
 		left:3%;
-		padding-top:-100px;
 		width:17%;
 	}
 	
@@ -343,7 +343,7 @@ object {
 }
 
 /* !phones */
-@media only screen and (min-device-width : 300px) and (max-device-width : 680px) {
+@media (min-device-width : 300px) and (max-device-width : 680px) {
 	a:link {
 		color:#d00000;
 		text-decoration:none;
@@ -376,8 +376,9 @@ object {
 	}
 	
 	#content {
+		max-width: 740px;
 		padding-top:18px;
-		width:75%;
+		width:80%;
 	}
 	
 	h2 {
@@ -386,7 +387,6 @@ object {
 	
 	#animbox {
 		left:3%;
-		padding-top:-100px;
 		width:17%;
 	}
 	
