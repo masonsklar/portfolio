@@ -49,7 +49,7 @@ project.controller('MainController', ['$scope', function($scope) {
     title: 'Demo - dynamic logo', 
     type: 'digital',
     caption: 'A dynamic SVG logo for Your Friends, a collaboration with Zach Stoebner.',
-    data: '<iframe src="yfiframe.html" frameborder="0" height="200" width="220" scrolling="no"></iframe>'
+    data: '<iframe src="yfiframe.html" frameborder="0" height="280" width="335" scrolling="no"></iframe>'
     },
     {
 	title: 'The House Call',
